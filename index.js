@@ -10,10 +10,12 @@ const database = require('./config/database.js');
 database.connect();
 //end connect database
 
+//gọi đến routes
+const routes=require('./api/v1/routes/index.routes')
 
-app.get('/tasks', (req, res) => {
-  res.send('Hello World!')
-})
+
+//routes
+routes(app)
 
 
 app.listen(port, () => {
