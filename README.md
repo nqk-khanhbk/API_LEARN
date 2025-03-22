@@ -31,7 +31,7 @@
   8. Thay đổi trạng thái nhiều sản phẩm(PATCH)
 
          http://localhost:3000/api/v1/tasks/change-multi
-         ```c
+        ```c
          {
               "ids":[
                      "67dbfbc673c7c4e3196c64ea",
