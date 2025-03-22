@@ -26,12 +26,11 @@
  
   7. Thay đổi trạng thái 1 sản phẩm(PATCH)
         
-        http://localhost:3000/api/v1/tasks/change-status/67dbfbc673c7c4e3196c64ea  
+         http://localhost:3000/api/v1/tasks/change-status/67dbfbc673c7c4e3196c64ea  
 
   8. Thay đổi trạng thái nhiều sản phẩm(PATCH)
 
          http://localhost:3000/api/v1/tasks/change-multi
-
          ```c
          {
               "ids":[
@@ -44,7 +43,7 @@
         ```
   9. Thêm mới một task(POST)
        
-        http://localhost:3000/api/v1/tasks/create
+         http://localhost:3000/api/v1/tasks/create
 
         ```c
         {
@@ -58,7 +57,7 @@
  
   10. Chỉnh sửa chi tiết 1 task(PATCH)
        
-        http://localhost:3000/api/v1/tasks/edit/67dbfbc673c7c4e3196c64ea 
+          http://localhost:3000/api/v1/tasks/edit/67dbfbc673c7c4e3196c64ea 
 
        ```c
        {
@@ -69,4 +68,4 @@
 
   11. Xóa một task(DELETE)
 
-         http://localhost:3000/api/v1/tasks/delete/67dbfbc673c7c4e3196c64ea
+          http://localhost:3000/api/v1/tasks/delete/67dbfbc673c7c4e3196c64ea
