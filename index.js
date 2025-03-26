@@ -3,6 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 //cấu hình env
 require('dotenv').config()
+var cookieParser = require('cookie-parser')
 const port = process.env.PORT
 const database = require('./config/database.js');
 
@@ -15,7 +16,8 @@ app.use(bodyParser.json())
 
 //gọi đến routes
 const routes=require('./api/v1/routes/index.routes')
-
+//cookies-parser
+app.use(cookieParser())
 
 //routes
 routes(app)

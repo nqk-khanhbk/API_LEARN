@@ -69,3 +69,53 @@
   11. Xóa một task(DELETE)
 
           http://localhost:3000/api/v1/tasks/delete/67dbfbc673c7c4e3196c64ea
+
+  12. Tạo 1 tài khoản(POST)
+       
+         http://localhost:3000/api/v1/users/register
+       
+       ```c
+       {
+       "fullName":"Nguyễn Quốc Khánh",
+       "email":"Khanhdzvl@gmail.com",
+       "password":"123456"
+       }
+       ```
+  13. Đăng nhập(POST)
+
+        http://localhost:3000/api/v1/users/login
+       ```c
+       {
+       "email":"Khanhdzvl@gmail.com",
+       "password":"123456"
+       }
+       ```
+  14. Lấy lại mật khẩu,gửi mã otp về email(POST)
+
+        http://localhost:3000/api/v1/users/password/forgot
+       
+       ```c
+       {
+       "email":"Khanhdzvl@gmail.com"
+       }
+       ```
+  15. Nhập mã OTP xác thực(POST)
+
+        http://localhost:3000/api/v1/users/password/otp
+       
+       ```c
+       {
+       "email":"Khanhdzvl@gmail.com",
+       "otp":"123456"--> Ngẫu nhiên 6 số gửi về email bn nhập
+       }
+       ```
+  16. Sau khi OTP đúng đổi mật khẩu(POST)
+       
+        http://localhost:3000/api/v1/users/password/reset
+
+       ```c
+       {
+       "newPassword":"654321"--> mật khẩu mới muốn đổi
+       }
+       ```
+       
